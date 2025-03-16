@@ -61,6 +61,12 @@ build CMakeFiles/Library_Management_System.dir/Class/Book.cpp.obj: CXX_COMPILER_
   OBJECT_DIR = CMakeFiles\Library_Management_System.dir
   OBJECT_FILE_DIR = CMakeFiles\Library_Management_System.dir\Class
 
+build CMakeFiles/Library_Management_System.dir/Class/Library.cpp.obj: CXX_COMPILER__Library_Management_System_unscanned_Debug C$:/Users/Amaya/CLionProjects/Library$ Management$ System/Class/Library.cpp || cmake_object_order_depends_target_Library_Management_System
+  DEP_FILE = CMakeFiles\Library_Management_System.dir\Class\Library.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Library_Management_System.dir
+  OBJECT_FILE_DIR = CMakeFiles\Library_Management_System.dir\Class
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Library_Management_System
@@ -69,7 +75,7 @@ build CMakeFiles/Library_Management_System.dir/Class/Book.cpp.obj: CXX_COMPILER_
 #############################################
 # Link the executable Library_Management_System.exe
 
-build Library_Management_System.exe: CXX_EXECUTABLE_LINKER__Library_Management_System_Debug CMakeFiles/Library_Management_System.dir/main.cpp.obj CMakeFiles/Library_Management_System.dir/Class/Book.cpp.obj
+build Library_Management_System.exe: CXX_EXECUTABLE_LINKER__Library_Management_System_Debug CMakeFiles/Library_Management_System.dir/main.cpp.obj CMakeFiles/Library_Management_System.dir/Class/Book.cpp.obj CMakeFiles/Library_Management_System.dir/Class/Library.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Library_Management_System.dir

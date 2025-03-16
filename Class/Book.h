@@ -1,4 +1,5 @@
 #include <iostream>
+#include "../Function.hpp"
 using namespace std;
 
 #ifndef LIBRARY_MANAGEMENT_SYSTEM_BOOK_H
@@ -7,7 +8,6 @@ using namespace std;
 
 class Book {
 private:
-    string id;
     string isbn;
     string title;
     string author;
@@ -15,7 +15,6 @@ private:
     string publication;
     string category;
 public:
-    string getId();
     string getIsbn();
     string getTitle();
     string getAuthor();

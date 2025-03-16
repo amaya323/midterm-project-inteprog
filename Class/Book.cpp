@@ -1,12 +1,7 @@
 //
 // Created by Amaya on 3/16/2025.
 //
-#include "../Function.hpp"
 #include "Book.h"
-
-string Book::getId() {
-    return id;
-}
 
 string Book::getIsbn() {
     return isbn;
@@ -32,10 +27,6 @@ string Book::getCategory() {
     return category;
 }
 
-void Book::setId() {
-    id = getStringInput("Enter ID: ");
-}
-
 void Book::setIsbn() {
     isbn = getStringInput("Enter ISBN: ");
 }
@@ -57,7 +48,20 @@ void Book::setPublication() {
 }
 
 void Book::setCategory() {
-    category = getStringInput("Enter Category [Fiction/Non-Fiction]: ");
+    bool isValidCategory;
+    do{
+        category = getStringInput("Enter Category [Fiction/Non-Fiction]: ");
+        if(toLowerCase(category) == "fiction"){
+            category = "Fiction";
+            isValidCategory = true;
+        }else if(toLowerCase(category) == "non-fiction" || toLowerCase(category) == "non fiction"){
+            category = "Non-Fiction";
+            isValidCategory = true;
+        }else{
+            cout << endl << "Error: Category not found." << endl << endl;
+            isValidCategory = false;
+        }
+    }while(!isValidCategory);
 }
 
 

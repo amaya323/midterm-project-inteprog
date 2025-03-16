@@ -19,3 +19,15 @@ string getStringInput(string prompt) {
 
     return input;
 }
+
+// Function to output string with characters in all lowercase
+string toLowerCase(string str){
+
+    for (char& c: str){
+        if(isalpha(c)){
+            c = tolower(c);
+        }
+    }
+
+    return str;
+}
