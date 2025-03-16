@@ -64,4 +64,18 @@ void Book::setCategory() {
     }while(!isValidCategory);
 }
 
+void Book::printBook(const string& id) const {
+    cout << left << setw(10) << id
+        << setw(15) << isbn
+        << setw(40) << title
+        << setw(30) << author
+        << setw(10) << edition
+        << setw(15) << publication
+        << setw(10) << category << endl;
+    cout << endl;
+}
+
+
+
+
 

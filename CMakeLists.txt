@@ -7,4 +7,6 @@ add_executable(Library_Management_System main.cpp
         Class/Book.cpp
         Class/Book.h
         Class/Library.cpp
-        Class/Library.h)
+        Class/Library.h
+        Function.cpp
+        Function.h)

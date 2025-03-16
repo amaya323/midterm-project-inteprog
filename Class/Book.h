@@ -1,9 +1,7 @@
-#include <iostream>
-#include "../Function.hpp"
-using namespace std;
-
-#ifndef LIBRARY_MANAGEMENT_SYSTEM_BOOK_H
-#define LIBRARY_MANAGEMENT_SYSTEM_BOOK_H
+#ifndef BOOK_H
+#define BOOK_H
+#include "../Function.h"
+#include <iomanip>
 
 
 class Book {
@@ -22,14 +20,15 @@ public:
     string getPublication();
     string getCategory();
 
-    void setId();
     void setIsbn();
     void setTitle();
     void setAuthor();
     void setEdition();
     void setPublication();
     void setCategory();
+    void printBook(const string& id) const;
+
 };
 
 
-#endif //LIBRARY_MANAGEMENT_SYSTEM_BOOK_H
+#endif
