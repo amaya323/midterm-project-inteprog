@@ -5,8 +5,8 @@
 #ifndef FUNCTION_HPP
 #define FUNCTION_HPP
 
-#include <iostream>
 using namespace std;
+#include <iostream>
 #include <regex>
 
 // Function declarations
@@ -18,5 +18,6 @@ string toUpperCase(string str);
 bool validNumber(const string &input, int &output);
 void getValidatedInput(const string &prompt, int &output, int minVal, int maxVal);
 void askYesOrNo(string question, char &yOrN);
+string toRemoveSpace(string input);
 
 #endif

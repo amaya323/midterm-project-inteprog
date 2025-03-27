@@ -6,6 +6,8 @@
 
 class Book {
 private:
+    //variable declarations
+    string id;
     string isbn;
     string title;
     string author;
@@ -13,20 +15,24 @@ private:
     string publication;
     string category;
 public:
-    string getIsbn();
-    string getTitle();
-    string getAuthor();
-    string getEdition();
-    string getPublication();
-    string getCategory();
+    //getter for the book attributes
+    string getId() const;
+    string getIsbn() const;
+    string getTitle() const;
+    string getAuthor() const;
+    string getEdition() const;
+    string getPublication() const;
+    string getCategory() const;
 
+    //setter for the book attributes
+    void setId(string id);
     void setIsbn();
     void setTitle();
     void setAuthor();
     void setEdition();
     void setPublication();
     void setCategory();
-    void printBook(const string& id) const;
+    void printBook() const;
 
 };
 

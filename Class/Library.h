@@ -5,19 +5,21 @@
 #ifndef LIBRARY_H
 #define LIBRARY_H
 #include "Book.h"
-#include <map>
 
 class Library {
 private:
-    map<string, Book> library;
-    string id;
+    //variable declarations
+    Book books[10] = {}; //books
+    int numberOfBooks = 0; //keep track of books
+
+    //helper functions for the public functions, only accessible inside the class
+    int findBookId(const string& id);
+    void printBookHeader();
+    void setId(Book& book);
 
 public:
-    string getId();
-
-    void setId();
-
-    void printBookHeader();
+    //functions that are accessible outside the class
+    void printMenu();
 
     void addBook();
 

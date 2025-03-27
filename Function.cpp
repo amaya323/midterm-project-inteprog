@@ -9,17 +9,6 @@ void printTitle(const string &title) {
     cout << "\n" << border << " " << title << " " << border << "\n" << endl;
 }
 
-// Function to print menu
-void printMenu() {
-    cout << "[1] Add Book" << endl;
-    cout << "[2] Edit Book" << endl;
-    cout << "[3] Search Book" << endl;
-    cout << "[4] Delete Book" << endl;
-    cout << "[5] View Books by Category" << endl;
-    cout << "[6] View All Books" << endl;
-    cout << "[7] Exit" << endl;
-}
-
 // Function to get string input of user
 string getStringInput(string prompt) {
     string input;
@@ -95,4 +84,15 @@ void askYesOrNo(string question, char &yOrN) {
         getline(cin, placeholder);
         yOrN = tolower(placeholder[0]);
     } while (placeholder.length() != 1 || (yOrN != 'y' && yOrN != 'n'));
+}
+
+//Function to removeWhiteSpace
+string toRemoveSpace(string input) {
+    string output;
+    for (char &c: input) {
+        if (!isspace(c)) {
+            output+=c;
+        }
+    }
+    return output;
 }
