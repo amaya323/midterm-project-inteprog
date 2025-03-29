@@ -27,13 +27,13 @@ void Library::printBookHeader() {
 
 //function to print menu
 void Library::printMenu() {
-    cout << "[1] Add Book" << endl;
-    cout << "[2] Edit Book" << endl;
-    cout << "[3] Search Book" << endl;
-    cout << "[4] Delete Book" << endl;
-    cout << "[5] View Books by Category" << endl;
-    cout << "[6] View All Books" << endl;
-    cout << "[7] Exit" << endl;
+    cout << "\t[1] Add Book" << endl;
+    cout << "\t[2] Edit Book" << endl;
+    cout << "\t[3] Search Book" << endl;
+    cout << "\t[4] Delete Book" << endl;
+    cout << "\t[5] View Books by Category" << endl;
+    cout << "\t[6] View All Books" << endl;
+    cout << "\t[7] Exit" << endl;
 }
 
 //function to set book id
@@ -42,7 +42,7 @@ void Library::setId(Book& book) {
     string id;
 
     do{
-        id = getStringInput("Enter ID: ");
+        id = getStringInput("Enter ID: "); // prompt user to input id and get input
         id = toUpperCase(id);
 
         //check if the id is already taken
@@ -52,7 +52,7 @@ void Library::setId(Book& book) {
         //if id is not taken, check if id is alphanumeric
         } else {
             isValidId = true;
-            for (char &c: id) {
+            for (char &c: id) { // check if id is alphanumeric
                 if (!isalnum(c)) {
                     cout << endl << "Error: ID must be alphanumeric only" << endl << endl;
                     isValidId = false;
@@ -129,14 +129,13 @@ void Library::searchBook(){
     string id = getStringInput("Enter ID of Book: ");
     id = toUpperCase(id);
 
-    //find index of the book
+    //find index of the book [will return -1 if the book is not found]
     int index = findBookId(id);
 
     //print error message if the book is not found
     if(index == -1){
         cout << endl << "Error: Book not found" << endl << endl;
-    //print book details if the book id is found
-    }else {
+    }else { //print book details if the book id is found
         printBookHeader();
         books[index].printBook();
         cout << endl;
@@ -149,13 +148,12 @@ void Library::editBook() {
     string id = getStringInput("Enter ID of Book: ");
     id = toUpperCase(id);
 
-    //get index of the book
+    //find index of the book [will return -1 if the book is not found]
     int index = findBookId(id);
-    //print error message if the book is not found
-    if(index == -1){
+
+    if(index == -1){ //print error message if the book is not found
         cout << endl << "Error: Book not found" << endl << endl;
-    //if the books is found continue with the editing of the details
-    }else {
+    }else { //if the books is found continue with the editing of the details
         //print current book details
         cout << endl << "Current Book Details: " << endl << endl;
         printBookHeader();
@@ -190,14 +188,14 @@ void Library::deleteBook() {
     string id = getStringInput("Enter ID of Book: ");
     id = toUpperCase(id);
 
-    //get index of the book
+    //find index of the book [will return -1 if the book is not found]
     int index = findBookId(id);
 
     if(index == -1){ //if the book is not found print error
         cout << endl << "Error: Book not found" << endl << endl;
     }else { //if the book is found continue with the deletion
         char deleteBook;
-        cout << "ID: " << id << endl;
+        printBookHeader();
         books[index].printBook(); //print book details
         cout << endl;
 
@@ -215,7 +213,7 @@ void Library::deleteBook() {
 
 //function to view all books in the library
 void Library::viewAllBooks() {
-    if (numberOfBooks == 0) { //if the number of books is 0, display message
+    if (numberOfBooks == 0) { //if the number of books is 0
         cout << "No books available in the library.\n";
     }else { //print all books
         printBookHeader();

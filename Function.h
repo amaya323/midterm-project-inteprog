@@ -11,7 +11,6 @@ using namespace std;
 
 // Function declarations
 void printTitle(const string &title);
-void printMenu();
 string getStringInput(string prompt);
 string toLowerCase(string str);
 string toUpperCase(string str);
