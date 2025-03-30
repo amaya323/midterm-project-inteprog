@@ -7,7 +7,6 @@
 
 using namespace std;
 #include <iostream>
-#include <regex>
 
 // Function declarations
 void printTitle(const string &title);
