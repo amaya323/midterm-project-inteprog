@@ -9,4 +9,8 @@ add_executable(Library_Management_System main.cpp
         Class/Library.cpp
         Class/Library.h
         Function.cpp
-        Function.h)
+        Function.h
+        Class/NonFictionBook.cpp
+        Class/NonFictionBook.h
+        Class/FictionBook.cpp
+        Class/FictionBook.h)

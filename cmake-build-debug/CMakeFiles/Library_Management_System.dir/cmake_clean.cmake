@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Library_Management_System.dir/Class/Book.cpp.obj"
   "CMakeFiles/Library_Management_System.dir/Class/Book.cpp.obj.d"
+  "CMakeFiles/Library_Management_System.dir/Class/FictionBook.cpp.obj"
+  "CMakeFiles/Library_Management_System.dir/Class/FictionBook.cpp.obj.d"
   "CMakeFiles/Library_Management_System.dir/Class/Library.cpp.obj"
   "CMakeFiles/Library_Management_System.dir/Class/Library.cpp.obj.d"
+  "CMakeFiles/Library_Management_System.dir/Class/NonFictionBook.cpp.obj"
+  "CMakeFiles/Library_Management_System.dir/Class/NonFictionBook.cpp.obj.d"
   "CMakeFiles/Library_Management_System.dir/Function.cpp.obj"
   "CMakeFiles/Library_Management_System.dir/Function.cpp.obj.d"
   "CMakeFiles/Library_Management_System.dir/main.cpp.obj"
