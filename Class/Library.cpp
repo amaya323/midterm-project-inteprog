@@ -45,12 +45,10 @@ void Library::setId(Book& book) {
         id = getStringInput("Enter ID: "); // prompt user to input id and get input
         id = toUpperCase(id);
 
-        //check if the id is already taken
-        if (findBookId(id) != -1) {
+        if (findBookId(id) != -1) { //check if the id is already taken
             cout << endl << "Error: Duplicate ID" << endl << endl;
             isValidId = false;
-        //if id is not taken, check if id is alphanumeric
-        } else {
+        } else { //if id is not taken, check if id is alphanumeric
             isValidId = true;
             for (char &c: id) { // check if id is alphanumeric
                 if (!isalnum(c)) {
