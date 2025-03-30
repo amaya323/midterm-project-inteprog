@@ -2,6 +2,7 @@
 // Created by Amaya on 3/16/2025.
 //
 #include "Book.h"
+
 string Book::getId() const{
     return id;
 }
@@ -58,25 +59,6 @@ void Book::setEdition() {
 //prompt user to enter book publication and store the value
 void Book::setPublication() {
     publication = getStringInput("Enter Publication: ");
-}
-
-//prompt user to enter book category and store the value
-void Book::setCategory() {
-    bool isValidCategory;
-    do{ //get user input and validate
-        category = getStringInput("Enter Category [Fiction/Non-Fiction]: ");
-        category = toRemoveSpace(toLowerCase(category));
-        if(category == "fiction"){
-            category = "Fiction";
-            isValidCategory = true;
-        }else if(category == "non-fiction" || category == "nonfiction"){
-            category = "Non-Fiction";
-            isValidCategory = true;
-        }else{
-            cout << endl << "Error: Category not found." << endl << endl;
-            isValidCategory = false;
-        }
-    }while(!isValidCategory); //loop until user inputs a correct category
 }
 
 //function to print book details of a book

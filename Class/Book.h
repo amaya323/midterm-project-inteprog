@@ -13,6 +13,7 @@ private:
     string author;
     string edition;
     string publication;
+protected:
     string category;
 public:
     //getter for the book attributes
@@ -31,7 +32,7 @@ public:
     void setAuthor();
     void setEdition();
     void setPublication();
-    void setCategory();
+    virtual void setCategory() = 0;
     void printBook() const;
 
 };

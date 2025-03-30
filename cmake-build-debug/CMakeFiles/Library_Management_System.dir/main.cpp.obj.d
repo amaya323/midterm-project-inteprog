@@ -207,4 +207,6 @@ CMakeFiles/Library_Management_System.dir/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.0.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.0.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
  C:\Users\Amaya\Library-Management-System\Class/Library.h \
- C:\Users\Amaya\Library-Management-System\Class/Book.h
+ C:\Users\Amaya\Library-Management-System\Class/Book.h \
+ C:\Users\Amaya\Library-Management-System\Class/NonFictionBook.h \
+ C:\Users\Amaya\Library-Management-System\Class/FictionBook.h

@@ -124,12 +124,42 @@ CMakeFiles/Library_Management_System.dir/Function.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Library_Management_System.dir/Function.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Amaya\Library-Management-System\Function.cpp -o CMakeFiles\Library_Management_System.dir\Function.cpp.s
 
+CMakeFiles/Library_Management_System.dir/Class/NonFictionBook.cpp.obj: CMakeFiles/Library_Management_System.dir/flags.make
+CMakeFiles/Library_Management_System.dir/Class/NonFictionBook.cpp.obj: C:/Users/Amaya/Library-Management-System/Class/NonFictionBook.cpp
+CMakeFiles/Library_Management_System.dir/Class/NonFictionBook.cpp.obj: CMakeFiles/Library_Management_System.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Amaya\Library-Management-System\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Library_Management_System.dir/Class/NonFictionBook.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Library_Management_System.dir/Class/NonFictionBook.cpp.obj -MF CMakeFiles\Library_Management_System.dir\Class\NonFictionBook.cpp.obj.d -o CMakeFiles\Library_Management_System.dir\Class\NonFictionBook.cpp.obj -c C:\Users\Amaya\Library-Management-System\Class\NonFictionBook.cpp
+
+CMakeFiles/Library_Management_System.dir/Class/NonFictionBook.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Library_Management_System.dir/Class/NonFictionBook.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Amaya\Library-Management-System\Class\NonFictionBook.cpp > CMakeFiles\Library_Management_System.dir\Class\NonFictionBook.cpp.i
+
+CMakeFiles/Library_Management_System.dir/Class/NonFictionBook.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Library_Management_System.dir/Class/NonFictionBook.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Amaya\Library-Management-System\Class\NonFictionBook.cpp -o CMakeFiles\Library_Management_System.dir\Class\NonFictionBook.cpp.s
+
+CMakeFiles/Library_Management_System.dir/Class/FictionBook.cpp.obj: CMakeFiles/Library_Management_System.dir/flags.make
+CMakeFiles/Library_Management_System.dir/Class/FictionBook.cpp.obj: C:/Users/Amaya/Library-Management-System/Class/FictionBook.cpp
+CMakeFiles/Library_Management_System.dir/Class/FictionBook.cpp.obj: CMakeFiles/Library_Management_System.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Amaya\Library-Management-System\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Library_Management_System.dir/Class/FictionBook.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Library_Management_System.dir/Class/FictionBook.cpp.obj -MF CMakeFiles\Library_Management_System.dir\Class\FictionBook.cpp.obj.d -o CMakeFiles\Library_Management_System.dir\Class\FictionBook.cpp.obj -c C:\Users\Amaya\Library-Management-System\Class\FictionBook.cpp
+
+CMakeFiles/Library_Management_System.dir/Class/FictionBook.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Library_Management_System.dir/Class/FictionBook.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Amaya\Library-Management-System\Class\FictionBook.cpp > CMakeFiles\Library_Management_System.dir\Class\FictionBook.cpp.i
+
+CMakeFiles/Library_Management_System.dir/Class/FictionBook.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Library_Management_System.dir/Class/FictionBook.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Amaya\Library-Management-System\Class\FictionBook.cpp -o CMakeFiles\Library_Management_System.dir\Class\FictionBook.cpp.s
+
 # Object files for target Library_Management_System
 Library_Management_System_OBJECTS = \
 "CMakeFiles/Library_Management_System.dir/main.cpp.obj" \
 "CMakeFiles/Library_Management_System.dir/Class/Book.cpp.obj" \
 "CMakeFiles/Library_Management_System.dir/Class/Library.cpp.obj" \
-"CMakeFiles/Library_Management_System.dir/Function.cpp.obj"
+"CMakeFiles/Library_Management_System.dir/Function.cpp.obj" \
+"CMakeFiles/Library_Management_System.dir/Class/NonFictionBook.cpp.obj" \
+"CMakeFiles/Library_Management_System.dir/Class/FictionBook.cpp.obj"
 
 # External object files for target Library_Management_System
 Library_Management_System_EXTERNAL_OBJECTS =
@@ -138,11 +168,13 @@ Library_Management_System.exe: CMakeFiles/Library_Management_System.dir/main.cpp
 Library_Management_System.exe: CMakeFiles/Library_Management_System.dir/Class/Book.cpp.obj
 Library_Management_System.exe: CMakeFiles/Library_Management_System.dir/Class/Library.cpp.obj
 Library_Management_System.exe: CMakeFiles/Library_Management_System.dir/Function.cpp.obj
+Library_Management_System.exe: CMakeFiles/Library_Management_System.dir/Class/NonFictionBook.cpp.obj
+Library_Management_System.exe: CMakeFiles/Library_Management_System.dir/Class/FictionBook.cpp.obj
 Library_Management_System.exe: CMakeFiles/Library_Management_System.dir/build.make
 Library_Management_System.exe: CMakeFiles/Library_Management_System.dir/linkLibs.rsp
 Library_Management_System.exe: CMakeFiles/Library_Management_System.dir/objects1.rsp
 Library_Management_System.exe: CMakeFiles/Library_Management_System.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Amaya\Library-Management-System\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Library_Management_System.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Amaya\Library-Management-System\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Library_Management_System.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Library_Management_System.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

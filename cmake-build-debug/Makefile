@@ -152,6 +152,30 @@ Class/Book.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library_Management_System.dir\build.make CMakeFiles/Library_Management_System.dir/Class/Book.cpp.s
 .PHONY : Class/Book.cpp.s
 
+Class/FictionBook.obj: Class/FictionBook.cpp.obj
+.PHONY : Class/FictionBook.obj
+
+# target to build an object file
+Class/FictionBook.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library_Management_System.dir\build.make CMakeFiles/Library_Management_System.dir/Class/FictionBook.cpp.obj
+.PHONY : Class/FictionBook.cpp.obj
+
+Class/FictionBook.i: Class/FictionBook.cpp.i
+.PHONY : Class/FictionBook.i
+
+# target to preprocess a source file
+Class/FictionBook.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library_Management_System.dir\build.make CMakeFiles/Library_Management_System.dir/Class/FictionBook.cpp.i
+.PHONY : Class/FictionBook.cpp.i
+
+Class/FictionBook.s: Class/FictionBook.cpp.s
+.PHONY : Class/FictionBook.s
+
+# target to generate assembly for a file
+Class/FictionBook.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library_Management_System.dir\build.make CMakeFiles/Library_Management_System.dir/Class/FictionBook.cpp.s
+.PHONY : Class/FictionBook.cpp.s
+
 Class/Library.obj: Class/Library.cpp.obj
 .PHONY : Class/Library.obj
 
@@ -175,6 +199,30 @@ Class/Library.s: Class/Library.cpp.s
 Class/Library.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library_Management_System.dir\build.make CMakeFiles/Library_Management_System.dir/Class/Library.cpp.s
 .PHONY : Class/Library.cpp.s
+
+Class/NonFictionBook.obj: Class/NonFictionBook.cpp.obj
+.PHONY : Class/NonFictionBook.obj
+
+# target to build an object file
+Class/NonFictionBook.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library_Management_System.dir\build.make CMakeFiles/Library_Management_System.dir/Class/NonFictionBook.cpp.obj
+.PHONY : Class/NonFictionBook.cpp.obj
+
+Class/NonFictionBook.i: Class/NonFictionBook.cpp.i
+.PHONY : Class/NonFictionBook.i
+
+# target to preprocess a source file
+Class/NonFictionBook.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library_Management_System.dir\build.make CMakeFiles/Library_Management_System.dir/Class/NonFictionBook.cpp.i
+.PHONY : Class/NonFictionBook.cpp.i
+
+Class/NonFictionBook.s: Class/NonFictionBook.cpp.s
+.PHONY : Class/NonFictionBook.s
+
+# target to generate assembly for a file
+Class/NonFictionBook.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Library_Management_System.dir\build.make CMakeFiles/Library_Management_System.dir/Class/NonFictionBook.cpp.s
+.PHONY : Class/NonFictionBook.cpp.s
 
 Function.obj: Function.cpp.obj
 .PHONY : Function.obj
@@ -236,9 +284,15 @@ help:
 	@echo ... Class/Book.obj
 	@echo ... Class/Book.i
 	@echo ... Class/Book.s
+	@echo ... Class/FictionBook.obj
+	@echo ... Class/FictionBook.i
+	@echo ... Class/FictionBook.s
 	@echo ... Class/Library.obj
 	@echo ... Class/Library.i
 	@echo ... Class/Library.s
+	@echo ... Class/NonFictionBook.obj
+	@echo ... Class/NonFictionBook.i
+	@echo ... Class/NonFictionBook.s
 	@echo ... Function.obj
 	@echo ... Function.i
 	@echo ... Function.s
